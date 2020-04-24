@@ -15,7 +15,4 @@ export default createGlobalStyle`
     font-size: 16px;
     font-family: 'Roboto',sans-serif;
   }
-  #root {
-    min-width: 360px;
-  }
   `
