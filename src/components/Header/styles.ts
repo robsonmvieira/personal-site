@@ -18,12 +18,13 @@ export const Container = styled.header`
 export const Wapper = styled.div`
   width: 100%;
   padding: 10px;
-  position: absolute;
+  position: fixed;
   display: flex;
   background: #202430;
 `
 export const Nav = styled.nav`
   @media only screen and (max-width: 480px) {
+    /* position: fixed; */
     width: 100%;
     display: flex;
     flex-direction: column;
