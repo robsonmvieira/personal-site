@@ -6,7 +6,7 @@ import mobiIcon from '../../assets/icons/smartphone.svg'
 import { Container } from './styles'
 
 const Skills: React.FC = () => (
-  <Container>
+  <Container id="skills">
     <h2>Skills</h2>
     <div>
       <img src={feIcon} alt="" srcSet="" />

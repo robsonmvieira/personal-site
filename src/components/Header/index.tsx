@@ -1,11 +1,13 @@
 /* eslint-disable no-undef */
 import React, { useState } from 'react'
 import { FiMenu } from 'react-icons/fi'
+
+import { animateScroll as scroll } from 'react-scroll'
 import FbIcon from '../../assets/icons/facebook.svg'
 import TwIcon from '../../assets/icons/twitter.svg'
 import InstIcon from '../../assets/icons/instagram.svg'
 import LinkIcon from '../../assets/icons/linkedin.svg'
-import { Container, Wapper, Nav, List, Apresentation } from './styles'
+import { Container, Wapper, Nav, List, Anchor, Apresentation } from './styles'
 
 const Header: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -15,22 +17,31 @@ const Header: React.FC = () => {
     <Container>
       <Wapper>
         <Nav>
-          <a href="home">@RM</a>
+          <Anchor to="home" onClick={() => scroll.scrollToTop()}>
+            @RM
+          </Anchor>
           <List visible={showMenu}>
             <li>
-              <a href="home">Home</a>
+              <Anchor to="home">Home</Anchor>
             </li>
             <li>
-              <a href="about">About</a>
+              <Anchor to="about" smooth duration={1000}>
+                About
+              </Anchor>
             </li>
             <li>
-              <a href="a">Blog</a>
+              <Anchor to="skills" smooth duration={1000}>
+                skills
+              </Anchor>
             </li>
             <li>
-              <a href="a">Contatc</a>
+              <Anchor to="a" smooth duration={1000}>
+                Contatc
+              </Anchor>
             </li>
           </List>
         </Nav>
+
         <FiMenu color="#fff" size={24} onClick={handleMenu} />
       </Wapper>
       <Apresentation>

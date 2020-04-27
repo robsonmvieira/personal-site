@@ -4,7 +4,7 @@ import { Container } from './styles'
 import Profile from '../../assets/images/profile.jpg'
 
 const About: React.FC = () => (
-  <Container>
+  <Container id="about">
     <h2>About Me</h2>
     <img src={Profile} alt="" srcSet="" />
 

@@ -1,10 +1,11 @@
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 import Bg from '../../assets/images/bg.jpg'
 
 interface ListProperty {
   visible: boolean
 }
-
+export const Anchor = styled(Link)``
 export const Container = styled.header`
   @media only screen and (max-width: 480px) {
     width: 100%;
