@@ -22,9 +22,6 @@ const Header: React.FC = () => {
           </Anchor>
           <List visible={showMenu}>
             <li>
-              <Anchor to="home">Home</Anchor>
-            </li>
-            <li>
               <Anchor to="about" smooth duration={1000}>
                 About
               </Anchor>
@@ -32,6 +29,11 @@ const Header: React.FC = () => {
             <li>
               <Anchor to="skills" smooth duration={1000}>
                 skills
+              </Anchor>
+            </li>
+            <li>
+              <Anchor to="xp" smooth duration={1000}>
+                Services
               </Anchor>
             </li>
             <li>
