@@ -6,6 +6,23 @@ interface ListProperty {
   visible: boolean
 }
 export const Anchor = styled(Link)``
+export const ContactMeButton = styled(Link)`
+  margin-top: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 200px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  opacity: 0.6;
+  transition: 0.3s;
+  :hover {
+    background: #fff;
+    color: #202430;
+  }
+`
+
 export const Container = styled.header`
   @media only screen and (max-width: 480px) {
     width: 100%;

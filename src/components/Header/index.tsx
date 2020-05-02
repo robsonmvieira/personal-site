@@ -7,7 +7,15 @@ import FbIcon from '../../assets/icons/facebook.svg'
 import TwIcon from '../../assets/icons/twitter.svg'
 import InstIcon from '../../assets/icons/instagram.svg'
 import LinkIcon from '../../assets/icons/linkedin.svg'
-import { Container, Wapper, Nav, List, Anchor, Apresentation } from './styles'
+import {
+  Container,
+  ContactMeButton,
+  Wapper,
+  Nav,
+  List,
+  Anchor,
+  Apresentation
+} from './styles'
 
 const Header: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -37,7 +45,7 @@ const Header: React.FC = () => {
               </Anchor>
             </li>
             <li>
-              <Anchor to="a" smooth duration={1000}>
+              <Anchor to="contact" smooth duration={1000}>
                 Contatc
               </Anchor>
             </li>
@@ -59,7 +67,9 @@ const Header: React.FC = () => {
           <img src={InstIcon} alt="" srcSet="" />
         </div>
 
-        <button type="button">Contact Me Now</button>
+        <ContactMeButton to="contact" smooth duration={1000}>
+          Contact Me Now
+        </ContactMeButton>
       </Apresentation>
     </Container>
   )
