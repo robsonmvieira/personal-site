@@ -3,6 +3,7 @@ import Skills from '../../components/Skills'
 import Header from '../../components/Header'
 import About from '../../components/About'
 import Experience from '../../components/Experience'
+import Contact from '../../components/Contact'
 // import { Container } from './styles';
 
 const Main: React.FC = () => (
@@ -11,6 +12,7 @@ const Main: React.FC = () => (
     <About />
     <Skills />
     <Experience />
+    <Contact />
   </>
 )
 
