@@ -1,7 +1,5 @@
 /* eslint-disable no-undef */
 import React, { useState } from 'react'
-import { FiMenu } from 'react-icons/fi'
-
 import { animateScroll as scroll } from 'react-scroll'
 import FbIcon from '../../assets/icons/facebook.svg'
 import TwIcon from '../../assets/icons/twitter.svg'
@@ -14,7 +12,8 @@ import {
   Nav,
   List,
   Anchor,
-  Apresentation
+  Apresentation,
+  IconMenu
 } from './styles'
 
 const Header: React.FC = () => {
@@ -52,7 +51,7 @@ const Header: React.FC = () => {
           </List>
         </Nav>
 
-        <FiMenu color="#fff" size={24} onClick={handleMenu} />
+        <IconMenu color="#fff" size={24} onClick={handleMenu} />
       </Wapper>
       <Apresentation>
         <h1>I&#39;m Front-end Engineer &#38; Back-end developer</h1>
