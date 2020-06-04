@@ -8,6 +8,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html, body, #root {
+    width: 100%;
+    height: 100vh;
+  }
   body {
     -webkit-font-smoothing: antialiased;
   }
@@ -15,4 +19,4 @@ export default createGlobalStyle`
     font-size: 16px;
     font-family: 'Roboto',sans-serif;
   }
-  `
+`
